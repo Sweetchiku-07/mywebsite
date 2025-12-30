@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Beginner Site</title>
+  <meta name="description" content="A clean, responsive starter website built with HTML, CSS, and JavaScript." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="header">
+    <div class="container nav-container">
+      <a class="logo" href="#">Beginner<span>Site</span></a>
+
+      <!-- Theme Controls -->
+      <div class="theme-controls" aria-label="Background theme controls">
+        <button class="btn btn-outline" id="toggleTheme" aria-pressed="false">Dark Mode</button>
+
+        <div class="color-swatches" role="group" aria-label="Preset background colors">
+          <button class="swatch" data-color="#ffffff" style="--swatch:#ffffff" aria-label="Pure White"></button>
+          <button class="swatch" data-color="#f5f7fb" style="--swatch:#f5f7fb" aria-label="Soft Light"></button>
+          <button class="swatch" data-color="#fff3cd" style="--swatch:#fff3cd" aria-label="Warm Pastel"></button>
+          <button class="swatch" data-color="#e0f7fa" style="--swatch:#e0f7fa" aria-label="Cool Aqua"></button>
+          <button class="swatch" data-color="#fde2e4" style="--swatch:#fde2e4" aria-label="Blush Pink"></button>
+          <button class="swatch" data-color="#eef2ff" style="--swatch:#eef2ff" aria-label="Indigo Mist"></button>
+        </div>
+
+        <label class="color-picker-label">
+          Custom:
+          <input type="color" id="customColor" value="#f5f7fb" aria-label="Pick custom background color"/>
+        </label>
+      </div>
+
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Build a simple, responsive website</h1>
+        <p>Starter template with HTML, CSS, and JavaScript. Easy to customize and extend.</p>
+        <div class="cta-group">
+          <a class="btn btn-primary" href="#features">Explore Features</a>
+          <a class="btn btn-secondary" href="#contact">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/placeholder-hero.svg" alt="Illustration" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Features / Cards -->
+  <section class="section" id="features">
+    <div class="container">
+      <h2 class="section-title">Features</h2>
+      <div class="grid cards">
+        <article class="card">
+          <div class="card-icon">💡</div>
+          <h3>Clean Layout</h3>
+          <p>Semantic HTML, accessible components, and responsive grid.</p>
+          <button class="btn btn-outline" data-toast>Try it</button>
+        </article>
+        <article class="card">
+          <div class="card-icon">⚡</div>
+          <h3>Fast &amp; Lightweight</h3>
+          <p>No frameworks required. Vanilla CSS &amp; JS only.</p>
+          <button class="btn btn-outline" data-toast>Try it</button>
+        </article>
+        <article class="card">
+          <div class="card-icon">🎨</div>
+          <h3>Easy Theming</h3>
+          <p>Change colors and fonts in one place with CSS variables.</p>
+          <button class="btn btn-outline" data-toast>Try it</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section alt" id="about">
+    <div class="container about">
+      <div>
+        <h2 class="section-title">About This Starter</h2>
+        <p>
+          This starter is perfect for beginners. It includes a responsive navbar, a hero
+          section, cards, and a contact form with basic validation. Use this as a foundation
+          for your portfolio, project site, or business landing page.
+        </p>
+        <ul class="checklist">
+          <li>Mobile‑first CSS</li>
+          <li>Accessible markup</li>
+          <li>Small, readable JavaScript</li>
+        </ul>
+      </div>
+      <div class="about-media">
+        <img src="assets/placeholder-about.svg" alt="About screenshot" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
